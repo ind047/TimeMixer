@@ -20,17 +20,18 @@ python -u run.py \
   --root_path ./dataset/P12/ \
   --data_path p12.csv \
   --features M \
-  --seq_len 96 \
-  --label_len 48 \
-  --pred_len 24 \
+  --seq_len 192 \
+  --label_len 96 \
+  --pred_len 96 \
   --e_layers 2 \
-  --d_model 16 \
-  --d_ff 32 \
+  --d_model 512 \
+  --d_ff 1024 \
   --enc_in 12 \
   --c_out 12 \
   --des 'Exp' \
-  --learning_rate 0.001 \
   --itr 1 \
+  --batch_size 32 \
+  --learning_rate 0.0001 \
   --train_epochs 20 \
   --patience 3 \
   --lradj 'TST' \
